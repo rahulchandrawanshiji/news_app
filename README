@@ -1,0 +1,41 @@
+                          INSTALLATIONS
+a)Visual Studio Code:-It is install for languages editer use 
+b)Python:- python is Download in python.org and install for work on python
+c)Django:- django is install by the command panel using the command is (pip install django)
+d)Pillow:-The Python Imaging Library adds image processing capabilities to your Python           interpreter. use the command for install the Pillow is (pip install Pillow)
+e)embed-video:-It is use for video add in over project then use this module .install by the help of command panel is (pip install django-embed-video)       
+
+                         
+                           
+                             LUNGUAGE EDITER USE
+
+*  Visual Studio Code:-
+                        Visual Studio Code (VS Code) is an open-source environment developed by Microsoft. It is one of the best Python IDE for Windows that can be used for Python development. Visual Studio Code is based on Electron which is a framework to deploy Node JS applications for the computer running on the Blink browser engine.
+
+                        Price: Free
+
+                        Features:
+
+                        The editor provides smart code completion based on function definition, imported modules, as well as variable types.
+                        You can work with Git as well as other SCM providers
+                        Enable you to debug code from the editor.
+                        Provides extensions to add new languages, debuggers, themes to gain the advantage of additional services.
+
+                              METHEDOLOGY 
+1 command:-
+a) Download the python on python.org site and install and chek in comment panel is (python --version)
+b) pip install django:- it is use for install the django in over system 
+c) django-admin startproject azzadmedia :-it is use for creat over project satup in over system
+d) django-admin startapp news :- it is use for creat over app in over project
+e)python manage.py makemigrations :- this command is use for makemigrations of over project 
+f) python manage.py migrate :- it is use for creat table in over database
+g)python manage.py creatsuperuser :- it is use for make admin panel id password  
+h)python manage.py collectstatic :-It is use for collect over all file in a single file using this command
+
+
+2. API:-
+*News api is use for daliy update over news
+*It is a free api for news in a News Api site:-http://newsapi.org/v2/top-headlines?country=in&apiKey=44ddea6e1a5444518ea8d5b9b065ed4e
+
+3. Implmention:-
+a)

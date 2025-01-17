@@ -1,0 +1,69 @@
+{% extends 'basic.html' %}
+{% block body %}
+{% comment %} {% load static%} {% endcomment %}
+{% comment %} 
+      <center>  <div class="col-lg-4  border-rounded">
+            <div class="card mx-auto mb-3" id="{{product.id}}" style="width:18rem%;height:100%;">
+            <center><h1>Advertisement</h1></center>
+            
+                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    {%for i in ad%}
+            
+                      <div class="carousel-item {% if i.id == 2 %}active{% else %}{% endif %}">
+                                                
+                        <img src="{{i.image.url}}" class="d-block w-100" alt="...">
+                      </div>
+                    {% endfor %}
+                </div>
+</div>
+
+             </div>  
+     </center>
+</div> {% endcomment %}
+<marquee><h1 style="color:blue;">Hello Hindustan</h1></marquee>
+
+<div class="'container-fluid mt-40" >
+{% comment %} style="margin-top:40% {% endcomment %}
+<div class="col-lg-12">
+<div class="row">
+  <div class="col-lg-8">
+    <div class="row mx-auto ">
+              
+                        {% for i in data.articles %}
+                       <div class="card" style="width: 18rem;">
+                       <img src="{{i.urlToImage}}" class="card-img-top" alt="{{i.source.name}}">
+                      <div class="card-body">
+                       <h5 class="card-title">{{i.title}}</h5>
+                       <p class="card-text">{{i.description|truncatechars:150}}</p>
+                       <a href="{% if se == nell %}login{% else %}{{i.url}}{%  endif %}" target="_blank" class="btn btn-primary">Read more</a>
+                       </div>
+  
+                        </div>
+                       {% endfor %}
+
+
+                    </div> 
+  </div>
+        <div class="col-lg-4  border-rounded">
+            <div class="card mx-auto mb-3" id="{{product.id}}" style="width: 18rem%;height:100%;position:fixed">
+            <center><h1>Advertisement</h1></center>
+            
+                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    {%for i in ad%}
+            
+                      <div class="carousel-item {% if i.id == 2 %}active{% else %}{% endif %}">
+                                                
+                        <img src="{{i.image.url}}" class="d-block w-100" alt="...">
+                      </div>
+                    {% endfor %}
+                </div>
+</div>
+
+             </div>  
+     
+</div>
+</div>
+
+{% endblock %}

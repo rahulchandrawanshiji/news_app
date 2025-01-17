@@ -1,0 +1,17 @@
+
+{% extends 'basic.html'%}
+{% load embed_video_tags %}
+{% block body %}
+<div class="'container-fluid mt-40 col-lg-12" >
+ <div id='products' class="col-lg-12 mx-auto">
+            <div class="row mx-auto ">
+{% for i in obj%}
+{% video i.video 'small' %}
+
+{% endfor %}
+</div>
+</div>
+</div>
+{%endblock%}
+
+

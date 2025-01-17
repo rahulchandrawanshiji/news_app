@@ -1,0 +1,23 @@
+{% extends 'basic.html' %}
+{% block body %}
+ <div class="'container-fluid mt-40 col-lg-12" >
+ {% comment %} <div id='products' class="col-lg-12 mx-auto"> {% endcomment %}
+
+    <div class="row mx-auto ">
+     {% for i in data.articles %}
+      {% comment %} {% if i.source.name==states%} {% endcomment %}
+                        <div class="card" style="width: 21rem;">
+                       <img src="{{i.urlToImage}}" class="card-img-top" alt="{{i.source.name}}">
+                      <div class="card-body">
+                       <h5 class="card-title">{{i.title}}</h5>
+                       <p class="card-text">{{i.description|truncatechars:150}}</p>
+                       <a href="{% if se == nell %}login{% else %}{{i.url}}{%  endif %}" target="_blank" class="btn btn-primary">Read more</a>
+                       </div>
+  
+                        </div>
+                       {% endfor %}
+   
+            </div>
+     {% comment %} </div> {% endcomment %}
+ </div>           
+{% endblock %}
