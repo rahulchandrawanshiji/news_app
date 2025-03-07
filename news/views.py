@@ -69,7 +69,7 @@ def validateCustomer(customers):
         if(not customers.name):
             error_massage='First Name Required  !!!'
         elif len(customers.name) < 4: 
-            error_massage='First Name must be 4 char long'
+            error_massage='First Name must be and also changes to words  to thee same subject  4 char long'
         # elif not customers.last_name:
         #     error_massage='Last Name Required  !!!'
         # elif len(customers.last_name) < 4:
