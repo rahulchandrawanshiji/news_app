@@ -77,11 +77,11 @@ def validateCustomer(customers):
         elif not customers.phone:
             error_massage='Phone Number Required  !!!'
         elif len(customers.phone) < 10:
-            error_massage='Phone Number must be 10'
+            error_massage='Phone Number must be 10 and this is requird because them all of sererio'
         elif len(customers.email) <5 :
             error_massage='Email  Required  !!!'
         elif not customers. password:
-            error_massage='Password must be Requied !!!'
+            error_massage='Password and the sensetive argument are  must be Requied !!!'
         
         elif len(customers.password) <5:
             error_massage='Password  must be 6 char long'
